@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>방문자 방명록</title>
+        <style>
+            body{
+                background-color:rgb(248, 248, 236);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+             
+        <form>
+        <fieldset style= "width:50; height:70;">
+        <legend align="center"><h2>&lt;방문자 방명록 입력&gt;</h2></legend>
+        
+            <p>이름 : <input type="text" name="name" size="10" placeholder="이름을 입력하시오" autofocus></p>
+            <p>나이: <input type="number" name="count" min="1" max="120"> </p>
+            <p>국적: <select name="subjects">
+                <option value="1" selected>Korea</option>
+                <option value="2">Japan</option>
+                <option value="3">China</option>
+                <option value="4">America</option>
+                <option value="5">England</option>
+            </select>
+            </p>
+            <p>전공: <input type="text" list="majorlist" name="major">
+                <datalist id="majorlist">
+                    <option value="Department of Business Administration">경영학과</option>
+                    <option value="Department of Economics">경제학과</option>
+                    <option value="Department of Broadcasting Entertainment">방송연예과</option>
+                    <option value="Department of Food and Nutrition">식품영양학과</option>
+                    <option value="Department of Information Statistics">정보통계학과</option>
+                    <option value="Department of Chinese and Chinese Studies">중어중국학과</option>
+                    <option value="Department of Physical Education">체육학과</option>
+                    <option value="Department of Computer Science">컴퓨터학과</option>
+                </datalist>
+            </p>    
+            <p>방문날짜 입력하기 <input type="date" name="today"></p>
+            <p><textarea cols="50" rows="3" placeholder="김희선에게 한마디"></textarea>
+                <p></p>
+                <input type="submit" value="제출">
+                <input type="reset" value="다시작성">
+            </fieldset>
+    </body>
+</html>
