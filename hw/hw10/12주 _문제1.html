@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+      <script>
+      function add(num, result) {
+        alert(num + "까지 더한 값은"+result+"입니다.")
+
+        function sum(num)
+       {
+          var sum=0;
+        for(var i=1; i<=num; i++) {
+          sum +=i;
+
+      }
+      return sum;
+      result=add(num)
+    }
+     
+         
+   
+      }
+     
+    
+  
+     
+</script>
+    <button type="button" onclick="add(10)">10까지 더하기</button>
+    <button type="button" onclick="add(50)">50까지 더하기</button>
+    <button type="button" onclick="add(100)">100까지 더하기</button>
+ 
+    </body>
+    </html>

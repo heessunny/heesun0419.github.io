@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <table border="1" style="width: 10cm">
+      <tr style="background-color: gray;">
+          <th>이름</th>
+          <th>가격</th>
+          <th>개수</th>
+      </tr>
+      <tr>
+        <td><p id="apple1"></p></td>
+        <td><p id="apple2"></p></td>
+        <td><p id="apple3"></p></td>
+      </tr>
+      
+     <tr> <td><p id="KM1"></p></td>
+        <td><p id="KM2"></p></td>
+        <td><p id="KM3"></p></td>
+    </tr>
+    <tr> <td><p id="tangerine1"></p></td>
+        <td><p id="tangerine2"></p></td>
+        <td><p id="tangerine3"></p></td>
+    </tr>
+    
+      <script>
+          var Apple={name: '사과', price: 21000, number: 10};
+          var KM={name: '참외', price: 17000, number: 20};
+          var Tangerine={name: '귤', price: 15000, number: 30};        
+        document.getElementById("apple1").innerHTML=" "+Apple.name;      
+        document.getElementById("apple2").innerHTML=" "+Apple.price;      
+        document.getElementById("apple3").innerHTML=" "+Apple.number;
+        document.getElementById("KM1").innerHTML=" "+KM.name;
+        document.getElementById("KM2").innerHTML=" "+KM.price;
+        document.getElementById("KM3").innerHTML=" "+KM.number;
+        document.getElementById("tangerine1").innerHTML=" "+Tangerine.name;
+        document.getElementById("tangerine2").innerHTML=" "+Tangerine.price;
+        document.getElementById("tangerine3").innerHTML=" "+Tangerine.number;
+   
+      </script>
+    </table>
+    
+    </body>
+    </html>

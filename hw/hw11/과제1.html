@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var n=0;
+        
+         $(document).ready(function() {
+            $("div.yellow").mousedown(function() {
+                $("p:first", this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수"+ ++n);
+            });
+           
+        });
+
+    </script>
+    <style>
+        div.yellow{
+            width: 200px;
+            height: 100px;
+            border:1px;
+            text-align:center;
+            background-color:yellow;
+        }
+        
+    </style>
+</head>
+<body>
+
+     <div class="yellow">
+         <p>마우스 클릭 횟수</p>
+         <p></p>
+         <p></p>
+     </div>
+    </body>
+    </html>
+

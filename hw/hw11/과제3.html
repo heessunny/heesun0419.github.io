@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("pic2").hide();
+
+            $("button.move").click(function() {
+                $("pic2").show("fast");
+                  
+                })
+            });
+
+    </script>
+    <style>
+        .pic2 {
+            height:100px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+      <p><button class="move">큰 이미지 보기/닫기</button></p>
+       <img class= "pic1" src="../hw10/img/home.png"/>
+      <img class="pic2" src="../hw10/img/home.png" width="400" height="300">
+    </body>
+    </html>

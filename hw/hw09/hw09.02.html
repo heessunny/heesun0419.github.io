@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <table border="1" style="width: 10cm">
+        <tr style="background-color: gray;">
+            <th>이름</th>
+            <th>가격</th>
+            <th>개수</th>
+        </tr>
+        
+    <p id="fruit"></p>    
+    <p id="fruit0"></p>
+    <p id="fruit1"></p>
+    <p id="fruit2"></p>
+      
+    <script>
+        
+     
+        var fruit=new Array(
+            ['사과', 21000, 10],
+            ['참외', 18000, 20],
+            ['귤', 15000, 30]
+        );
+
+        var cname=document.getElementById("fruit");
+    
+        for(var i=0; i<3; i++) {
+           
+            var cname=document.getElementById("fruit"+i);
+            cname.textContent=fruit[i];
+          
+        }
+    
+
+    </script>
+    </body>
+    </html>

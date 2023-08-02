@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+       var data=[];
+
+for(var i=1; i<10; ++i)
+{
+    for(var j=1; j<10; j++)
+    {
+    data[i ,j]=[String(i+"*"+j)];
+    }
+}
+function printData () {
+    for(var x=1; x<data.length; x++){
+        for(var y=1; y<data[x].length; y++){
+            document.write(data[x][y] + " ");
+          
+        }
+        document.write("<p/>")
+    }
+
+}
+
+    </script>
+    <button type="button" onclick="printData()">구구단 배열 데이터 보기</button>
+</body>
+</html>

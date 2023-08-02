@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="jquery-3.6.0.js"></script>
+   <script>
+       $(document).ready(function() {
+        $("img").hide();
+           $("button.soccer").click(function() {
+               
+               $("img.pic1").toggle(3000);
+
+            });
+            $("button.baseball").click(function() {
+                $("img.pic2").toggle(3000);
+            });
+            $("button.basketball").click(function() {
+                $("img.pic3").toggle(3000);
+            });
+       });
+   </script>
+   <style>
+       *{
+           text-align: center;
+
+       }
+       button{
+           height: 40px;
+           width: 150px;
+       }
+       img{
+           height: 200px;
+           width: 200px;
+       }
+   </style>
+</head>
+<body>
+
+    <button class="soccer">프로축구</button>
+    <button class="baseball">프로야구</button>
+    <button class="basketball">프로농구</button>
+    <p></p>
+    <img class="pic1" src="img/s.jpg">
+    <img class="pic2" src="img/b2.jpg">
+    <img class="pic3" src="img/b.jpg">
+    </body>
+    </html>

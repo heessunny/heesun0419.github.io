@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+    <html>
+         <head>
+              <meta charset="UTF-8"> 
+              <title>prompt</title>
+               <script>
+                var input = prompt('영문자를 입력하세요:'); 
+                alert(input); 
+
+                if(input>='A'&& input<='Z'){
+                    document.write("입력한 글자는 대문자"+ input.fontcolor('red').bold('bold')+ "입니다." );
+                }
+
+                else if(input>='a'&& input<='z'){
+                    document.write("입력한 글자는 소문자"+ input.fontcolor('red').bold('bold')+ "입니다." );
+                } 
+                else if(input==null){
+                    document.write("입력을 취소했습니다." );
+                }
+                else{
+                    document.write(input+"는 영문자가 아닙니다." );
+                } 
+                </script> 
+          </head> 
+        <body> 
+
+        </body> 
+            
+    </html>
