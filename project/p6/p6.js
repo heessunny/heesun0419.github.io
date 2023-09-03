@@ -13,7 +13,7 @@ pass.addEventListener('click', () => {
         errStack ++;
     }
 
-    if (errStack >=2&&errStack<5) {
+    if (errStack >=2&&errStack<5&&A.value!='머리가좀비어서') {
         alert('Hint! 정답은 7글자 ')
     }
     else if (errStack >= 5&&A.value!='머리가좀비어서') {

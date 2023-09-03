@@ -13,7 +13,7 @@ pass.addEventListener('click', () => {
         errStack ++;
     }
 
-    if (errStack >=2&&errStack<5) {
+    if (errStack >=2&&errStack<5&&A.value!='나무') {
         alert('Hint! 정답은 2글자 ')
     }
     else if (errStack >= 5&&A.value!='나무') {
