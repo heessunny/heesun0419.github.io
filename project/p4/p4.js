@@ -13,7 +13,7 @@ pass.addEventListener('click', () => {
         errStack ++;
     }
 
-    if (errStack >=2&&errStack<5&&A.value!='신기록) {
+    if (errStack >=2&&errStack<5&&A.value!='신기록') {
         alert('Hint! 정답은 3글자 ')
     }
     else if (errStack >= 5&&A.value!='신기록') {
