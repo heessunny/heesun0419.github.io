@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ssunny_side_up_</title>
+    <style>
+        .arrow{
+            position: relative;
+            
+        }
+        .arrow::after{
+            position: absolute;
+            left: 30px;;
+            top: 30px;;
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-top: 5px solid rgb(227, 227, 228);
+            border-right: 5px solid rgb(227, 227, 228);
+            transform: rotate(225deg);
+       
+        }
+        body {
+        height: 100vh;
+        width: 100vw;
+      
+          background-image:linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),url(../img/wave.jpg);
+          margin: 0;
+       
+        }
+        a {
+
+            text-align: center;
+            text-decoration: none; 
+            color: inherit; 
+ 
+  padding-left: 11cm; 
+   color: rgb(227, 227, 228);
+}
+.main {
+    
+    width: 500px;
+    height: 300px;
+    position: absolute; /* 부모 요소 기준으로 위치를 정하기 위해 */
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%); /* 위치를 가운데로 이동 */
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: white;
+      
+        
+    }
+    
+    .question {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+    #pass {
+        width: 100%;
+        margin-top: 10px;
+        background-color: lightgray;
+        border-color: transparent;
+        color: white;
+    }
+    
+    .answer {
+        display: block;
+        margin-bottom: 3px;
+        padding: 3px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+    }
+    
+    #alert {
+        border-color: transparent;
+    }
+        </style>
+        <body>
+           <a href="../p4/p4.html" ><div class="arrow"></div></a>
+        <div class="main">
+            <div class="question"><b>5. 무가 자기소개를 할 때 하는 말은? </b></div>     
+            <div class="container">
+                <input type="text" placeholder="정답" id="A" class="answer">
+                
+                <button id="pass" class="answer">제출</button>
+                <p id="alert" class="answer"> </p>
+            </div>
+       
+        </div>   
+        <script src="p5.js"></script>
+    </body>
+    </html>
